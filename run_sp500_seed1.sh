@@ -2,7 +2,7 @@
 # sp500 seed 1 full sweep
 set -uo pipefail
 
-PY="${PY:-/data1/jeffreytsai/SmartFolio/.venv/bin/python}"
+PY="${PY:-.venv/bin/python}"
 REPO="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 cd "$REPO"
 
