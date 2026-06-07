@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+
+# uv-managed virtualenv
+.venv/
+
+# Training artefacts (tensorboard event files, .zip checkpoints, stdout)
+logs/
+run_logs/
+
+# PB-IRL preference-dataset cache (regenerable from training data)
+dataset/pref_cache/
+
+# Generated datasets (regenerable via gen_data/build_dataset.py)
+dataset/data_train_predict_nd100/
+dataset/data_train_predict_sp500/
+dataset/data_train_predict_tw50/
+dataset/data_train_predict_zz500/
+dataset/corr/nd100/
+dataset/corr/sp500/
+dataset/corr/tw50/
+dataset/corr/zz500/
+
+# IDE / OS
+.idea/
+.DS_Store
+
+# Orchestration logs and outputs
+run_orch_logs/
+
+# Local scratch
+/tmp_*/
